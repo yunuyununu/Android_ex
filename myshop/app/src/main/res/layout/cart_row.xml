@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<TextView
+android:id="@+id/txtProduct"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:gravity="center"
+android:textColor="@color/black"
+android:textSize="20sp"/>
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+<EditText
+    android:id="@+id/editAmount"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:layout_weight="2"
+    android:hint="수량"
+    android:inputType="number"
+    android:text="1"
+    android:textSize="20sp"/>
+<Button
+    android:id="@+id/btnPlus"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:layout_weight="2"
+    android:text="+"/>
+<Button
+    android:id="@+id/btnMinus"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:layout_weight="2"
+    android:text="-"/>
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btnUpdate"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:layout_weight="5"
+    android:background="#ffff00"
+    android:text="수정"/>
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btnDelete"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:layout_weight="5"
+    android:background="#00ff00"
+    android:text="삭제"/>
+</LinearLayout>
+    </LinearLayout>

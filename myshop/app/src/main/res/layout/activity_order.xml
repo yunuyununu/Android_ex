@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderActivity">
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+<Button
+    android:id="@+id/btnProduct"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:layout_weight="1"
+    android:text="상품목록"/>
+<Button
+    android:id="@+id/btnCart"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:layout_weight="1"
+    android:onClick="onClick"
+    android:text="장바구니"/>
+<Button
+    android:id="@+id/btnMy"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:layout_weight="1"
+    android:onClick="onClick"
+    android:text="My"/>
+</LinearLayout>
+<TextView
+android:id="@+id/txtProduct"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:gravity="center"
+android:textColor="@color/black"
+android:textSize="20sp"/>
+<RadioGroup
+android:id="@+id/rdoMethod"
+android:layout_width="121dp"
+android:layout_height="119dp"
+android:layout_marginTop="6dp">
+<RadioButton
+    android:id="@+id/rdoCard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:checked="true"
+    android:text="Card"/>
+<RadioButton
+    android:id="@+id/rdoAccount"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Account"/>
+</RadioGroup>
+<EditText
+android:id="@+id/editCardNumber"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="카드번호"/>
+<EditText
+android:id="@+id/editZipcode"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="우편번호"/>
+<EditText
+android:id="@+id/editAddress1"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="주소"/>
+<EditText
+android:id="@+id/editAddress2"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="상세주소"/>
+<EditText
+android:id="@+id/editTel"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="전화"/>
+<Button
+android:id="@+id/btnOrder"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="주문"/>
+    </LinearLayout>
